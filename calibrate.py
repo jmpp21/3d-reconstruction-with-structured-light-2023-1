@@ -52,7 +52,7 @@ def main():
 
     camera_param_file = args.camera
 
-    dirnames = sorted(glob.glob('.\checkerpng'))
+    dirnames = sorted(glob.glob('.\checkerpngori') + glob.glob('.\checkerpng15') + glob.glob('.\checkerpng-20') + glob.glob('.\checkerdia10') + glob.glob('.\checkerpngdif-15'))
     if len(dirnames) == 0:
         print('Directories \'./capture_*\' were not found')
         return
